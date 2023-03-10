@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma, sans-serif;
+}
+.getRepos {
+  width: 800px;
+  min-height: 50vh;
+  text-align: center;
+  padding: 20px;
+  margin: 50px auto 0;
+  background-color: #eee;
+  margin-bottom: 30px;
+}
+form.search {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+form.search input,
+form.search button {
+  padding: 15px;
+  border: none;
+}
+form.search input {
+  flex: 1;
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+form.search input:focus {
+  outline: none;
+}
+form.search button {
+  width: fit-content;
+  margin-left: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #ff7582, #c56c86, #725a7a);
+  padding: 15px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+.repos {
+  display: flex;
+  flex-direction: column;
+}
+.repos .repo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.repos .repo:first-child {
+  margin-top: 30px;
+}
+
+.repo .text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.repo .actions {
+  width: fit-content;
+}
+.repo .actions .visit {
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-left: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  border: none;
+}
+/*background-image: linear-gradient(to right, var(--pinK), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
